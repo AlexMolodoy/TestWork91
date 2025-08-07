@@ -1,0 +1,53 @@
+.footer {
+  width: calc(100% - 20px);
+  padding: 10px;
+  background: #f0f0f0;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #ccc;
+  height: 65px;
+}
+
+.loggedInInfo {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.footerText {
+  margin: 0 auto;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (min-width: 425px) {
+  .footer {
+    width: calc(100% - 30px);
+
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .loggedInInfo {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    width: calc(100% - 40px);
+
+    padding: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .loggedInInfo {
+    font-size: 18px;
+    margin-top: 0;
+  }
+}

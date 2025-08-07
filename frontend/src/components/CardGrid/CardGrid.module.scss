@@ -1,0 +1,29 @@
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: calc(100% - 10px);
+  gap: 10px;
+  padding: 10px 5px;
+  margin: 10px auto;
+}
+
+@media (min-width: 425px) {
+  .cardGrid {
+    width: calc(425px - 40px);
+  }
+}
+
+@media (min-width: 768px) {
+  .cardGrid {
+    width: calc(768px - 40px);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardGrid {
+    width: calc(1024px - 40px);
+    padding: 20;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
